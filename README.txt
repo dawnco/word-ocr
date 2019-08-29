@@ -8,3 +8,5 @@ pip install var_dump
 
 #截图依赖
 pip install pyscreenshot
+# 鼠标控制
+pip install winput
