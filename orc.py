@@ -4,8 +4,10 @@
 from PIL import Image
 from pytesseract import image_to_string
 
-img = Image.open("data/test.png");
+name = "a1"
+
+img = Image.open("data/" + name + ".png");
 img = img.convert('L')  # convert image to black and white
-img.save('data/test-1.png')
+img.save("data/bw-" + name + ".png")
 text = image_to_string(img, lang='chi_sim')
 print(text)
