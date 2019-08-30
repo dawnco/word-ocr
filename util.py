@@ -8,6 +8,7 @@ import json
 import os
 from var_dump import var_dump
 
+
 # post 请求
 def post(url, data):
     headers = {
@@ -21,9 +22,9 @@ def post(url, data):
 
 # 读取目录下所有文件 不含子文件夹
 def readDirFile(dir):
-    files= os.listdir(dir) #得到文件夹下的所有文件名称
+    files = os.listdir(dir)  # 得到文件夹下的所有文件名称
     s = []
-    for file in files: #遍历文件夹
-        if not os.path.isdir(file): #判断是否是文件夹，不是文件夹才打开
-            s.append(file) #每个文件的文本存到list中
+    for file in files:  # 遍历文件夹
+        if not os.path.isdir(file):  # 判断是否是文件夹，不是文件夹才打开
+            s.append(file)  # 每个文件的文本存到list中
     return s
