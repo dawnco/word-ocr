@@ -1,3 +1,5 @@
+# coding=utf-8
+
 # windows 操作鼠标键盘
 # https://pypi.org/project/winput/
 # 2019-08-30
