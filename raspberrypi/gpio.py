@@ -22,3 +22,6 @@ while (True):
     GPIO.output(channel, state)  # 让引脚 2 输出高电平
     state = not state
     time.sleep(1)
+
+# 程序最后结束后，可以全部设置为输入
+GPIO.cleanup()
